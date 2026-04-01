@@ -51,7 +51,7 @@ def process_data(FileName, FileName_Sheet):
 
     # форматируем таблицу
     for row in range(1, ws.max_row):
-        ws.row_dimensions[row].height = 40
+        ws.row_dimensions[row].height = 65
         cell_value = str(ws.cell(row=row, column=2).value)
         ws.cell(row=row, column=2).value = cell_value.split(' ')[0]
 
